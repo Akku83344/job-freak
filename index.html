@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Company Website</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <script src="index.js"></script>
+</head>
+<body>
+  <header>
+    <button class="nav-toggle" onclick="toggleSidebar()">&#9776;</button>
+  </header>
+
+  <div id="sidebar">
+    <ul>
+      <li><a href="#" onclick="showContent('home')">Home</a></li>
+      <li><a href="#" onclick="showContent('contact')">Contact</a></li>
+      <li><a href="#" onclick="showContent('info')">Information</a></li>
+      <li><a href="#" onclick="showContent('guide')">Guide</a></li>
+    </ul>
+  </div>
+
+  <div id="content">
+    <div id="home-content" style="display: block">
+      <h2>Welcome to the Home Page!</h2>
+      <div class="image-container">
+        <img src="https://dynamic.placementindia.com/recruiter_comp_logo/1180745_20230414140815.jpg" alt="Your Image">
+      </div>
+      <p class="garbage-text">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis ac erat eget bibendum. Donec vitae nibh vel erat gravida efficitur. Nam vulputate aliquet nulla at placerat. Mauris eu vulputate nunc. Suspendisse efficitur neque sit amet consequat vehicula. Quisque ut tellus a dolor euismod tristique nec vitae elit. Ut bibendum nulla in mauris consectetur pharetra. Donec dictum fringilla mi, eu facilisis felis posuere id.
+      </p>
+    </div>
+
+    <div id="contact-content" style="display: none;">
+      <h2>Contact Us</h2>
+      <div class="contact-details">
+        <p>Email: contact@example.com</p>
+        <p>Phone: +1 123-456-7890</p>
+        <p>Address: 123 Main Street, City, Country</p>
+      </div>
+    </div>
+
+    <div id="info-content" style="display: none;">
+      <h2>Information</h2>
+      <p>This is the content for the Information page.</p>
+    </div>
+
+    <div id="guide-content" style="display: none;">
+      <h2>About Me</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam mattis ac erat eget bibendum. Donec vitae nibh vel erat gravida efficitur. Nam vulputate aliquet nulla at placerat. Mauris eu vulputate nunc. Suspendisse efficitur neque sit amet consequat vehicula.</p>
+      <a class="learn-more-button" href="#" onclick="showContent('contact')">Learn More</a>
+    </div>
+  </div>
+</body>
+</html>

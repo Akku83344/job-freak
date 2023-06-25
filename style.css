@@ -1,0 +1,96 @@
+/* General styles */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+/* Header styles */
+header {
+  background-color: #F0F0F0;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+}
+
+header h1 {
+  flex: 1;
+  text-align: center;
+  color: #526D82;
+}
+
+/* Sidebar styles */
+#sidebar {
+  width: 200px;
+  background: #526D82;
+  padding: 20px;
+  height: 100vh;
+  color: white;
+  position: fixed;
+  left: 0;
+  top: 0;
+  transition: transform 0.3s ease;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+#sidebar li {
+  margin-bottom: 30px;
+}
+
+/* Sidebar styles */
+#sidebar a {
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-size: 28px; /* Increase the font size */
+}
+
+/* Content styles */
+#content {
+  margin-left: 200px;
+  padding: 20px;
+  text-align: center; /* Center the content */
+}
+
+#content h2 {
+  margin-top: 0;
+  color: #526D82;
+  text-align: center; /* Center the title */
+}
+
+/* Rest of the CSS rules */
+/* ... */
+
+/* Media query for mobile devices */
+@media only screen and (max-width: 767px) {
+  #sidebar {
+    transform: translateX(-100%);
+  }
+
+  #content {
+    margin-left: 0;
+    padding-top: 60px;
+  }
+
+  .nav-toggle {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 999;
+    background: #F0F0F0;
+    padding: 5px;
+    cursor: pointer;
+  }
+}
+
+/* Rest of the CSS rules */
+/* ... */
