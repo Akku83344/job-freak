@@ -11,7 +11,7 @@ body {
 
 /* Header styles */
 header {
-  background-color: #F0F0F0;
+  background-color: #f0f0f0;
   padding: 10px;
   display: flex;
   align-items: center;
@@ -20,14 +20,15 @@ header {
 header h1 {
   flex: 1;
   text-align: center;
-  color: #526D82;
+  color: #526d82;
 }
 
 /* Sidebar styles */
 #sidebar {
   width: 200px;
-  background: #526D82;
+  background: #526d82;
   padding: 20px;
+  padding-top: 4rem;
   height: 100vh;
   color: white;
   position: fixed;
@@ -63,7 +64,7 @@ header h1 {
 
 #content h2 {
   margin-top: 0;
-  color: #526D82;
+  color: #526d82;
   text-align: center; /* Center the title */
 }
 
@@ -76,6 +77,10 @@ header h1 {
     transform: translateX(-100%);
   }
 
+  #sidebar.active {
+    transform: translateX(0);
+  }
+
   #content {
     margin-left: 0;
     padding-top: 60px;
@@ -86,7 +91,8 @@ header h1 {
     top: 10px;
     left: 10px;
     z-index: 999;
-    background: #F0F0F0;
+    border-radius: 10px;
+    background: #f0f0f0;
     padding: 5px;
     cursor: pointer;
   }
